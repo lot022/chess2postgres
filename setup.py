@@ -6,7 +6,7 @@ with open("README.md", "r") as readme:
 setup(
     name="chess2postgres",
     author="lot022",
-    version="0.0.2",
+    version="0.0.3",
     license="MIT",
     keywords="chess",
     python_requires=">=3.7",
@@ -15,7 +15,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=find_packages(),
-    install_requires=['berserk', 'psycopg2-binary', 'chessanalytics'],
+    install_requires=['berserk', 'chessanalytics'],
     classifiers=[
         "Programming Language :: Python",
         "Operating System :: Unix",
