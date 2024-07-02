@@ -102,7 +102,7 @@ def lichess_api2db(dbname : str , user : str, password : str, host : str, port :
         # decided to create it by myself, did not want to leave it unknown or just call it blitz, bullet etc.
                 elif k == 'speed':
                     x = 'Ranked' if d[str(i)]['ranked'] == True else 'Unranked'
-                    d[str(i)]['timecontrol'] = x + ' ' + v + ' ' + d[str(i)]['variant'] + 'game'
+                    d[str(i)]['timecontrol'] = x + ' ' + v + ' ' + d[str(i)]['variant'] + ' ' + 'game'
 
                 elif k == 'status':
                     d[str(i)]['termination'] = v
