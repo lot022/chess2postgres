@@ -2,6 +2,8 @@
 
 Simple python library to fetch games directly into Postgres database from Lichess.org using it's API or pgn file containing games.
 
+❗❕❗  To work properly library requires psycopg2 library  ❗❕❗
+
 # Installation.
 
       $ pip install chess2postgres
@@ -9,6 +11,10 @@ Simple python library to fetch games directly into Postgres database from Liches
 # Usage.
 
       from chess2postgres import lichess_pgn2db, lichess_api2db
+
+The above code imports both funcs from chess2postgres lib and is equivalent to 
+
+      from chess2postgres import *
 
 # About.
 
